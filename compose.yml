@@ -12,7 +12,7 @@ services:
   auth_service:
     image: saidevopseng/myrepo:auth_service
     deploy:
-      replicas: 1
+      replicas: 3
     ports:
       - "5001:5001"
     networks:
@@ -24,7 +24,7 @@ services:
   book_service:
     image: saidevopseng/myrepo:book_service
     deploy:
-      replicas: 1
+      replicas: 3
     ports:
       - "5002:5002"
     networks:
@@ -45,7 +45,7 @@ services:
   frontend:
     image: saidevopseng/myrepo:frontend_service
     deploy:
-      replicas: 1
+      replicas: 3
     ports:
       - "5000:5000"
     networks:
